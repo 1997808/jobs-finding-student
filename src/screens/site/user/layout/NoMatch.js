@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Header() {
+export default function NoMatch() {
   return (
     <div>
-      <h2>Header</h2>
+      <h2>404</h2>
     </div>
   )
 }

@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
+import AppContainer from './screens/index'
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <AppContainer />
   );
 }
 
