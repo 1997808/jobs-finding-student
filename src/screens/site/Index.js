@@ -3,7 +3,11 @@ import React from 'react'
 export default function Home() {
   return (
     <div>
-      <h2>Home</h2>
+      <h3>Nổi bật trong tuần</h3>
     </div>
   )
+}
+
+const styles = {
+
 }
