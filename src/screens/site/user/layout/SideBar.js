@@ -17,7 +17,7 @@ const styles = {
     width: "70vw",
     height: "100vh",
     padding: "0 15px",
-    left: 0, //"-70vw",
+    left: "-70vw",
     background: "#ffffff",
     position: "absolute",
     display: "flex",

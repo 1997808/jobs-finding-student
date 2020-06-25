@@ -1,32 +1,20 @@
 import React, { useState } from 'react'
 import {
-  Link
+  NavLink
 } from "react-router-dom";
 
 function Icon(props) {
-  const { iconName, url, active } = props
-  console.log(props)
-
-  // let icon = styles.icon
-  // const iconActive = () => {
-  //   if (active == 0) {
-  //     icon = styles.iconActive
-  //   }
-  // }
+  const { iconName, url } = props
 
   return (
-    <Link to={"/" + url}>
-      <i onClick={() => { }} style={styles.icon} className={"fas " + iconName}></i>
-    </Link>
+    <NavLink exact to={"/" + url} style={styles.icon} activeStyle={styles.iconActive}>
+      <i className={"fas " + iconName}></i>
+    </NavLink>
   )
+  //NavLink check active se cho style
 }
 
 export default function Bar() {
-  // const [active, setActive] = useState(false)
-  // const onIconActive = () => {
-  //   setActive(!active)
-  // }
-
   return (
     <div style={styles.bar} >
       <Icon iconName="fa-home" url="" />
