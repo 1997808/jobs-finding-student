@@ -8,9 +8,9 @@ import {
 
 import Home from './site/Index'
 import FindJob from './site/FindJob'
-import Finding from './site/Finding'
-import Filter from './site/Filter'
-import Sort from './site/Sort'
+// import Finding from './site/Finding'
+// import Filter from './site/Filter'
+// import Sort from './site/Sort'
 import JobDetail from './site/JobDetail'
 import SignIn from './site/SignIn'
 import SignUp from './site/SignUp'

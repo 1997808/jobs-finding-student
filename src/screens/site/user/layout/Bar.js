@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
   NavLink
 } from "react-router-dom";
@@ -33,7 +33,7 @@ const styles = {
     padding: "0 15px",
     bottom: 0,
     background: "#ffffff",
-    position: "absolute",
+    position: "fixed",
     display: "flex",
     justifyContent: "space-between",
     borderTop: "1px solid #eeeeee"
