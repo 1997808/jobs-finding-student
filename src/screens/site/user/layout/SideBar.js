@@ -4,6 +4,8 @@ import myAvatar from "../../../../assets/images/Valorant_icon.png"
 import {
   Link
 } from "react-router-dom";
+import { useSelector, useDispatch } from 'react-redux'
+import { toggleDrawer } from '../../../../actions/index'
 
 function Item(props) {
   const { iconName, text, url } = props
@@ -18,9 +20,14 @@ function Item(props) {
 }
 
 export default function SideBar() {
+  const drawerActive = useSelector(state => state.drawer)
+  const dispatch = useDispatch()
+  const drawer = { ...styles.mainDrawer, ...styles.drawer }
+  const drawerClick = { ...styles.mainDrawer, ...styles.drawerActive }
+
   return (
-    <div style={styles.drawer}>
-      <img style={styles.banner} src={myImage} alt="img"></img>
+    <div style={drawerActive ? drawerClick : drawer}>
+      <img onClick={() => dispatch(toggleDrawer())} style={styles.banner} src={myImage} alt="img"></img>
       <img style={styles.avatar} src={myAvatar} alt="img"></img>
       <h4 style={styles.text}>Đăng nhập hoặc Đăng kí</h4>
       <div style={styles.funcContainer}>
@@ -33,21 +40,30 @@ export default function SideBar() {
 }
 
 const styles = {
-  drawer: {
+  mainDrawer: {
     width: "70vw",
     height: "100vh",
-    left: "-75vw",
+    left: "0",
     background: "#fff",
     position: "fixed",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    overFlow: "hidden",
     boxShadow: "0 3px 6px #bbb",
     marginRight: "6px",
-    transform: "translateX(75vw)",
+    transform: "translateX(-75vw)",
     transition: "transform 0.3s ease-out",
     zIndex: 10,
+    overFlow: "hidden",
+  },
+  drawer: {
+    transform: "translateX(-75vw)",
+    transition: "transform 0.3s ease-out",
+  },
+
+  drawerActive: {
+    transform: "translateX(0)",
+    transition: "transform 0.3s ease-out",
   },
 
   banner: {

@@ -1,13 +1,14 @@
 import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { toggleDrawer } from '../../../../actions/index'
 
 export default function Header() {
-  const openDrawer = () => {
-
-  }
+  const drawerActive = useSelector(state => state.drawer)
+  const dispatch = useDispatch()
 
   return (
     <div style={styles.header}>
-      <i onClick={() => openDrawer()} style={styles.icon} className={"fas fa-bars"}></i>
+      <i onClick={() => dispatch(toggleDrawer())} style={styles.icon} className={"fas fa-bars"}></i>
       <h2 style={styles.logo}>Header</h2>
       <i onClick={() => { }} style={styles.icon} className={"fas fa-search"}></i>
     </div>
