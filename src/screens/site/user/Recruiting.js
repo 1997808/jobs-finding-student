@@ -1,9 +1,26 @@
 import React from 'react'
+import JobItem from '../../../components/jobItem'
 
-export default function Recruiting() {
+export default function Recruting() {
   return (
-    <div>
-      <h2>Recruiting</h2>
+    <div style={styles.container}>
+      <h3 style={styles.title}>Đề xuất công việc</h3>
+      <JobItem />
+      <JobItem />
+      <h3 style={styles.title}>Công việc đang ứng tuyển</h3>
+      <JobItem />
+      <JobItem />
+      <JobItem />
     </div>
   )
+}
+
+const styles = {
+  container: {
+    marginTop: "60px"
+  },
+
+  title: {
+    padding: "15px 0",
+  },
 }

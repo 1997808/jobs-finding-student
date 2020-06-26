@@ -10,6 +10,7 @@ export default function Footer() {
 
 const styles = {
   footer: {
-    margin: "30px 30px"
+    height: "60px",
+    width: "100%"
   }
 }

@@ -27,16 +27,14 @@ export default function PublicContainer() {
       <Header />
       <SideBar />
       <div class="container">
-        <div>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/findjob" component={FindJob} />
-            <Route path="/jobdetail" component={JobDetail} />
-            <Route exact path="/signin" component={SignIn} />
-            <Route path="/signup" component={SignUp} />
-            <Route component={NoMatch} />
-          </Switch>
-        </div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/findjob" component={FindJob} />
+          <Route path="/jobdetail" component={JobDetail} />
+          <Route path="/signin" component={SignIn} />
+          <Route path="/signup" component={SignUp} />
+          <Route component={NoMatch} />
+        </Switch>
       </div>
       <Bar />
       <Footer />

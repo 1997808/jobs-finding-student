@@ -21,6 +21,7 @@ const styles = {
     padding: "0 15px",
     top: 0,
     background: "#5160FF",
+    // background: "#fff",
     position: "fixed",
     display: "flex",
     justifyContent: "space-between",
@@ -28,9 +29,13 @@ const styles = {
     color: "#ffffff"
   },
 
+  logo: {
+    color: "#fff"
+  },
+
   icon: {
     fontSize: "24px",
     padding: "18px",
-    color: "#ffffff"
+    color: "#fff"
   },
 }

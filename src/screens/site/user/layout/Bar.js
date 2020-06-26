@@ -32,6 +32,7 @@ const styles = {
     height: "60px",
     padding: "0 15px",
     bottom: 0,
+    left: 0,
     background: "#ffffff",
     position: "fixed",
     display: "flex",
@@ -46,8 +47,8 @@ const styles = {
   },
 
   iconActive: {
-    fontSize: "30px",
-    padding: "15px",
+    // fontSize: "30px",
+    // padding: "15px",
     color: "#5160FF"
   }
 }

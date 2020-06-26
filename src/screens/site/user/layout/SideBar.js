@@ -29,7 +29,9 @@ export default function SideBar() {
     <div style={drawerActive ? drawerClick : drawer}>
       <img onClick={() => dispatch(toggleDrawer())} style={styles.banner} src={myImage} alt="img"></img>
       <img style={styles.avatar} src={myAvatar} alt="img"></img>
-      <h4 style={styles.text}>Đăng nhập hoặc Đăng kí</h4>
+      <Link to={"/signin"}>
+        <h4 style={styles.text}>Đăng nhập ngay</h4>
+      </Link>
       <div style={styles.funcContainer}>
         <Item iconName="fa-home" text="Trang chủ" url="" />
         <Item iconName="fa-cog" text="Cài đặt" url="/setting" />
