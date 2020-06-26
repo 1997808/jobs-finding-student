@@ -20,47 +20,11 @@ export default function Notification() {
 
 const styles = {
   container: {
-    marginTop: "60px"
+    marginTop: "60px",
   },
 
   title: {
+    fontWeight: 400,
     padding: "15px 0",
-  },
-
-  noti: {
-    width: "100%",
-    height: "auto",
-    display: "flex",
-    alignItems: "center",
-    padding: "15px",
-    borderRadius: "5px",
-    border: "1px solid #eee"
-  },
-
-  featuredNoti: {
-    width: "100%",
-    height: "auto",
-    display: "flex",
-    alignItems: "center",
-    padding: "15px",
-    borderRadius: "5px",
-    boxShadow: "0 3px 6px #bbb",
-  },
-
-  notiDetail: {
-    padding: "2px 0",
-    fontWeight: "300",
-    // color: "#bbb"
-  },
-
-  date: {
-    textAlign: "right",
-    fontWeight: "300",
-  },
-
-  icon: {
-    fontSize: "24px",
-    marginRight: "15px",
-    color: "#ddd"
   },
 }

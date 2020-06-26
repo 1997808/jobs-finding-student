@@ -53,6 +53,7 @@ const styles = {
 
   funcBar: {
     width: "100%",
+    height: "40px",
     borderBottom: "1px solid #eee",
     display: "flex",
     justifyContent: "space-around",

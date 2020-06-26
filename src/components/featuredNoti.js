@@ -25,14 +25,15 @@ const styles = {
     height: "auto",
     display: "flex",
     alignItems: "center",
+    background: "#fff",
     padding: "15px",
     borderRadius: "5px",
-    boxShadow: "0 3px 6px #bbb",
+    boxShadow: "0 4px 8px #bbb",
     marginBottom: "15px",
   },
 
   notiDetail: {
-    padding: "2px 0",
+    padding: "5px 0",
     fontWeight: "300",
   },
 

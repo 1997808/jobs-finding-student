@@ -21,6 +21,7 @@ const styles = {
   },
 
   title: {
+    fontWeight: 400,
     padding: "15px 0",
   },
 }

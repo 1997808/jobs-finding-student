@@ -24,9 +24,11 @@ const styles = {
     height: "auto",
     display: "flex",
     alignItems: "center",
+    background: "#fff",
     padding: "15px",
     borderRadius: "5px",
-    borderTop: "1px solid #eee",
+    boxShadow: "0 2px 4px #bbb",
+    marginBottom: "10px",
   },
 
   notiDetail: {

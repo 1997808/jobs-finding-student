@@ -26,7 +26,8 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    color: "#ffffff"
+    color: "#ffffff",
+    zIndex: "10",
   },
 
   logo: {

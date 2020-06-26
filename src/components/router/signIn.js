@@ -1,5 +1,5 @@
 import React from 'react';
-import { login } from '../utils';
+import { login } from '../../utils';
 
 const SignIn = (props) => {
 

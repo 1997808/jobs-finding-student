@@ -32,9 +32,7 @@ export default function UserContainer() {
       <Header />
       <SideBar />
 
-      <Header />
-      <SideBar />
-      <div class="container">
+      <div class="container" style={styles.container}>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/findjob" component={FindJob} />
@@ -57,4 +55,10 @@ export default function UserContainer() {
       <Footer />
     </Router>
   )
+}
+
+const styles = {
+  container: {
+    background: "rgba(238,238,238,0.3)"
+  },
 }

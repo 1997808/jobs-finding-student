@@ -31,13 +31,14 @@ const styles = {
     width: "100%",
     height: "60px",
     padding: "0 15px",
-    bottom: 0,
+    bottom: -1,
     left: 0,
     background: "#ffffff",
     position: "fixed",
     display: "flex",
     justifyContent: "space-between",
-    borderTop: "1px solid #eeeeee"
+    borderTop: "1px solid #eeeeee",
+    zIndex: "10"
   },
 
   icon: {

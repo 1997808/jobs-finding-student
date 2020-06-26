@@ -25,7 +25,7 @@ const styles = {
     height: "auto",
     marginBottom: "15px",
     borderRadius: "5px",
-    boxShadow: "0 3px 6px #bbb",
+    boxShadow: "0 4px 8px #bbb",
     overflow: "hidden",
   },
 
