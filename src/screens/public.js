@@ -26,28 +26,18 @@ export default function PublicContainer() {
     <Router>
       <Header />
       <SideBar />
-
-      <Switch>
-        <Route path="/signup">
-          <SignUp />
-        </Route>
-        <Route path="/signin">
-          <SignIn />
-        </Route>
-        <Route path="/jobdetail">
-          <JobDetail />
-        </Route>
-        <Route path="/findjob">
-          <FindJob />
-        </Route>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="*">
-          <NoMatch />
-        </Route>
-      </Switch>
-
+      <div class="container">
+        <div>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/findjob" component={FindJob} />
+            <Route path="/jobdetail" component={JobDetail} />
+            <Route exact path="/signin" component={SignIn} />
+            <Route path="/signup" component={SignUp} />
+            <Route component={NoMatch} />
+          </Switch>
+        </div>
+      </div>
       <Bar />
       <Footer />
     </Router>

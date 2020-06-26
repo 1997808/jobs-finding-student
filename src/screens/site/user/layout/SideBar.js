@@ -43,6 +43,7 @@ const styles = {
   mainDrawer: {
     width: "70vw",
     height: "100vh",
+    top: "0",
     left: "0",
     background: "#fff",
     position: "fixed",
@@ -51,10 +52,8 @@ const styles = {
     alignItems: "center",
     boxShadow: "0 3px 6px #bbb",
     marginRight: "6px",
-    transform: "translateX(-75vw)",
-    transition: "transform 0.3s ease-out",
     zIndex: 10,
-    overFlow: "hidden",
+    // overflow: "hidden",
   },
   drawer: {
     transform: "translateX(-75vw)",

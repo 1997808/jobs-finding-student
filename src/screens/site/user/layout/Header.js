@@ -1,9 +1,8 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { toggleDrawer } from '../../../../actions/index'
 
 export default function Header() {
-  const drawerActive = useSelector(state => state.drawer)
   const dispatch = useDispatch()
 
   return (
