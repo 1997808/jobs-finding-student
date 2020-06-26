@@ -1,14 +1,10 @@
 // reducers/index.js
 
-// import { combineReducers } from 'redux'
-// import people from './peopleReducer'
-// import cartReducer from './cartReducer'
-// định nghĩa các reducer khác ...
+import { combineReducers } from 'redux'
+import todos from './todos'
 
-// const rootReducer = combineReducers({
-//   people,
-//   cartReducer
-//   // nếu có reducer khác thì add thêm ở đây
-// })
+export default combineReducers({
+  todos,
+})
 
 // export default rootReducer
