@@ -4,9 +4,9 @@ import Title from '../../components/title'
 export default function Filter() {
   const [textFind, setTextFind] = useState("")
 
-  const handleChange = (event) => {
-    setTextFind(event.target.value);
-  }
+  // const handleChange = (event) => {
+  //   setTextFind(event.target.value);
+  // }
 
   const handleSubmit = (event) => {
     alert('An essay was submitted: ' + textFind);
@@ -19,7 +19,7 @@ export default function Filter() {
 
       <Title title="Địa điểm" />
       <select style={styles.input}>
-        <option value="grapefruit">Grapefruit</option>
+        <option style={styles.input} value="grapefruit">Grapefruit</option>
         <option value="lime">Lime</option>
         <option selected value="coconut">Coconut</option>
         <option value="mango">Mango</option>
@@ -48,11 +48,12 @@ export default function Filter() {
         <option selected value="coconut">Coconut</option>
         <option value="mango">Mango</option>
       </select>
-      <button style={styles.submitBtn} type="submit" >
 
-      </button>
+      <div style={styles.btnContainer}>
+        <button style={styles.submitBtn} type="submit" >Áp dụng</button>
+        <button style={styles.btn} type="submit" >Làm lại</button>
+      </div>
     </form>
-
   )
 }
 
@@ -76,19 +77,42 @@ const styles = {
     marginBottom: "15px"
   },
 
-  submitBtn: {
-    width: "40px",
-    height: "40px",
+  btnContainer: {
+    width: "100%",
+    height: "auto",
+    position: "absolute",
+    bottom: "0",
+    left: "0",
+    padding: "15px 30px",
     display: "flex",
-    border: "none",
-    borderRadius: "0 5px 5px 0",
-    background: "#5160FF",
-    justifyContent: "center",
-    alignItems: "center"
+    flexDirection: "column",
+    justifyContent: "space-between",
+    alignItems: "center",
+    borderTop: "1px solid #eee"
   },
 
-  icon: {
-    fontSize: "16px",
-    color: "#fff"
+  submitBtn: {
+    width: "100%",
+    height: "40px",
+    border: "none",
+    color: "#fff",
+    borderRadius: "5px",
+    background: "#5160FF",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: "10px"
+  },
+
+  btn: {
+    width: "100%",
+    height: "30px",
+    border: "none",
+    color: "#444",
+    borderRadius: "5px",
+    background: "#eee",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
 }

@@ -6,7 +6,7 @@ import JobInfo from "./jobInfo"
 export default function FeaturedJob() {
   return (
     <div style={styles.featuredJob}>
-      <img src={myImage} style={styles.banner}></img>
+      <img src={myImage} style={styles.banner} alt="banner"></img>
       <div style={styles.jobInfo}>
         <JobInfo />
       </div>

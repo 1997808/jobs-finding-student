@@ -4,7 +4,7 @@ import myAvatar from "../assets/images/Valorant_icon.png"
 export default function JobInfo() {
   return (
     <React.Fragment>
-      <img src={myAvatar} style={styles.avatar}></img>
+      <img src={myAvatar} style={styles.avatar} alt="ava"></img>
       <div style={styles.jobOverview}>
         <h4 style={styles.jobName}>Thực tập sinh thiết kế đa phương tiện năm 3 năm 4</h4>
         <h6 style={styles.text}>Công ty Cổ phần Pete Ite</h6>

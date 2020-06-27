@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux'
 import { toggleDrawer } from '../../../../actions/index'
+import { logout } from '../../../../utils/index';
 
 function Item(props) {
   const { iconName, text, url } = props
@@ -32,6 +33,7 @@ export default function SideBar() {
       <Link to={"/signin"}>
         <h4 style={styles.text}>Đăng nhập ngay</h4>
       </Link>
+      <h4 style={styles.text} onClick={() => logout()}>Đăng xuất</h4>
       <div style={styles.funcContainer}>
         <Item iconName="fa-home" text="Trang chủ" url="" />
         <Item iconName="fa-cog" text="Cài đặt" url="/setting" />
