@@ -22,8 +22,8 @@ export default function findJob() {
     <div style={styles.container}>
       <div className="row" style={styles.funcBarContainer}>
         <div style={styles.funcBar}>
-          <Item iconName="fa-filter" text="Bộ lọc" url="/filter" />
-          <Item iconName="fa-sort-alpha-down" text="Sắp xếp" url="/sort" />
+          <Item iconName="fa-filter" text="Bộ lọc" url="filter" />
+          <Item iconName="fa-sort-alpha-down" text="Sắp xếp" url="sort" />
         </div>
       </div>
       <div style={styles.jobList}>

@@ -38,7 +38,6 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     borderTop: "1px solid #eeeeee",
-    zIndex: "10"
   },
 
   icon: {

@@ -1,6 +1,9 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { toggleDrawer } from '../../../../actions/index'
+import {
+  Link
+} from "react-router-dom";
 
 export default function Header() {
   const dispatch = useDispatch()
@@ -8,8 +11,10 @@ export default function Header() {
   return (
     <div style={styles.header}>
       <i onClick={() => dispatch(toggleDrawer())} style={styles.icon} className={"fas fa-bars"}></i>
-      <h2 style={styles.logo}>Header</h2>
-      <i onClick={() => { }} style={styles.icon} className={"fas fa-search"}></i>
+      <h3 style={styles.logo}>FRESHERSTART</h3>
+      <Link to={"/finding"}>
+        <i onClick={() => { }} style={styles.icon} className={"fas fa-search"}></i>
+      </Link>
     </div>
   )
 }
@@ -31,7 +36,8 @@ const styles = {
   },
 
   logo: {
-    color: "#fff"
+    color: "#fff",
+    fontWeight: "300"
   },
 
   icon: {
