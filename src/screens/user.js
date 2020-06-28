@@ -21,6 +21,7 @@ import AddComment from './site/user/AddComment'
 
 import SignIn from './site/SignIn'
 import SignUp from './site/SignUp'
+import SignUpE from './site/SignUpE'
 import NoMatch from './site/user/layout/NoMatch'
 
 import PrivateRoute from '../components/router/private';
@@ -45,6 +46,7 @@ export default function UserContainer() {
       <PublicRoute layout={FlatLayout} restricted={false} path="/sort" component={Sort} />
       <PublicRoute layout={FlatLayout} restricted={true} path="/signin" component={SignIn} />
       <PublicRoute layout={FlatLayout} restricted={true} path="/signup" component={SignUp} />
+      <PublicRoute layout={FlatLayout} restricted={true} path="/signupe" component={SignUpE} />
       <Route path="*" component={NoMatch} />
     </Switch >
   )

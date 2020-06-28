@@ -46,7 +46,6 @@ const styles = {
   funcBarContainer: {
     width: "100%",
     height: "40px",
-    background: "#fff",
     position: "fixed",
     top: "60px"
   },
@@ -54,6 +53,7 @@ const styles = {
   funcBar: {
     width: "100%",
     height: "40px",
+    background: "#fff",
     borderBottom: "1px solid #eee",
     display: "flex",
     justifyContent: "space-around",

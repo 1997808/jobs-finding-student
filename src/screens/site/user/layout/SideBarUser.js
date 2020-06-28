@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux'
 import { toggleDrawer } from '../../../../actions/index'
+import { logout } from '../../../../utils/index';
 
 function Item(props) {
   const { iconName, text, url } = props
@@ -19,7 +20,7 @@ function Item(props) {
   )
 }
 
-export default function SideBar() {
+export default function SideBarUser() {
   const drawerActive = useSelector(state => state.drawer)
   const dispatch = useDispatch()
   const drawer = { ...styles.mainDrawer, ...styles.drawer }
@@ -29,15 +30,23 @@ export default function SideBar() {
     <div style={drawerActive ? drawerClick : drawer}>
       <img onClick={() => dispatch(toggleDrawer())} style={styles.banner} src={myImage} alt="img"></img>
       <img style={styles.avatar} src={myAvatar} alt="img"></img>
-      <Link to={"/signin"}>
-        <h4 style={styles.text}>Đăng nhập ngay</h4>
-      </Link>
+      {/* <h4 style={styles.text}
+        
+      </h4> */}
       <div style={styles.funcContainer}>
         <Item iconName="fa-home" text="Trang chủ" url="" />
+        <Item iconName="fa-user" text="Tài khoản" url="/account" />
+        <Item iconName="fa-id-card" text="Mô tả" url="/info" />
         <Item iconName="fa-cog" text="Cài đặt" url="/setting" />
         <Item iconName="fa-info-circle" text="Về chúng tôi" url="/about" />
+        <div onClick={() => {
+          logout()
+          dispatch(toggleDrawer())
+        }}><Item iconName="fa-door-open" text="Đăng xuất" url="/" />
+        </div>
+
       </div>
-    </div >
+    </div>
   )
 }
 

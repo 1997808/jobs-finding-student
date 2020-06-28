@@ -4,7 +4,7 @@ import {
   Link
 } from "react-router-dom";
 
-export default function SignIn() {
+export default function SignUp() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
@@ -27,8 +27,17 @@ export default function SignIn() {
 
   return (
     <React.Fragment>
-      <h1 style={styles.title}>Đăng nhập để mở khóa thêm nhiều chức năng</h1>
+      <h1 style={styles.title}>Đăng kí tuyển dụng</h1>
       <form onSubmit={handleSubmit} style={styles.form}>
+        <h4 style={styles.text}>Tên công ty</h4>
+        <input style={styles.input} type="name" onChange={handleChangeEmail} />
+
+        <h4 style={styles.text}>Số điện thoại</h4>
+        <input style={styles.input} type="name" onChange={handleChangeEmail} />
+
+        <h4 style={styles.text}>Địa chỉ</h4>
+        <input style={styles.input} type="name" onChange={handleChangeEmail} />
+
         <h4 style={styles.text}>Email</h4>
         <input style={styles.input} type="email" onChange={handleChangeEmail} />
 
@@ -36,24 +45,21 @@ export default function SignIn() {
         <input style={styles.input} type="password" onChange={handleChangePassword} />
 
         <div style={styles.textContainer}>
-          <div style={styles.checkboxContainer}>
-            <input style={styles.checkbox} type="checkbox" id="autoSignIn" name="autoSignIn" value="auto"></input>
-            <label style={styles.label} for="autoSignIn">Tự động đăng nhập</label>
-          </div>
-          <h5 style={styles.forgetText}>Quên mật khâu?</h5>
+          <input style={styles.checkbox} type="checkbox" id="accept" name="accept" value="auto"></input>
+          <label style={styles.label} for="accept">Tôi đã đọc và đồng ý với các
+              <span style={{ color: "#5160FF" }}> Thỏa thuận sử dụng</span>
+          </label>
         </div>
 
         <button onClick={() => handleLogin()} style={styles.submitBtn} type="submit" >
-          <Link to={"/"}>Đăng nhập</Link>
+          Đăng kí
         </button>
       </form>
-      <div style={styles.textContainer2}>
-        <p>Chưa có tài khoản?</p>
-        <h5 style={styles.forgetText}>
-          <Link to={"/signup"}>
-            Đăng ký ngay!
-          </Link>
-        </h5>
+
+      <div style={styles.textContainer3}>
+        <p style={styles.label}>Bạn đã có tài khoản?
+          <Link to={"/signin"}><span style={{ color: "#5160FF", marginLeft: "10px" }}>Đăng nhập</span></Link>
+        </p>
       </div>
     </React.Fragment>
   )
@@ -63,8 +69,8 @@ export default function SignIn() {
 const styles = {
   title: {
     fontWeight: 700,
-    width: "75%",
-    padding: "30px 0 30px 15px"
+    width: "60%",
+    padding: "15px 0 15px 15px"
   },
 
   text: {
@@ -91,14 +97,8 @@ const styles = {
 
   textContainer: {
     display: "flex",
-    justifyContent: "space-between",
     alignItems: "center",
     marginBottom: "15px"
-  },
-
-  checkboxContainer: {
-    display: "flex",
-    alignItems: "center"
   },
 
   checkbox: {
@@ -113,7 +113,7 @@ const styles = {
 
   forgetText: {
     color: "#5160FF",
-    marginLeft: "15px"
+    paddingTop: "5px"
   },
 
   submitBtn: {
@@ -128,31 +128,10 @@ const styles = {
     alignItems: "center"
   },
 
-  textContainer2: {
+  textContainer3: {
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "flex-end",
     alignItems: "center",
-    marginTop: "60px"
+    padding: "0 15px"
   },
 }
-
-// import React from 'react';
-// import { login } from '../../utils';
-
-// const SignIn = (props) => {
-
-//   const handleLogin = () => {
-//     login();
-//     props.history.push('/dashboard');
-//   }
-
-//   return (
-//     <div>
-//       <h1>Sign in</h1>
-
-//       <button onClick={() => handleLogin()}>Click here to log in</button>
-//     </div>
-//   );
-// };
-
-// export default SignIn;

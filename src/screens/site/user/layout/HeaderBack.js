@@ -1,14 +1,13 @@
 import React from 'react'
-import {
-  Link
-} from "react-router-dom";
 
 export default function HeaderBack() {
+  const goBack = () => {
+    window.history.back()
+  }
+
   return (
     <div style={styles.header}>
-      <Link to={"/"}>
-        <i onClick={() => { }} style={styles.icon} className={"fas fa-angle-left"}></i>
-      </Link>
+      <i onClick={() => goBack()} style={styles.icon} className={"fas fa-angle-left"}></i>
     </div>
   )
 }
