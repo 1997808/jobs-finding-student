@@ -1,16 +1,20 @@
 import React from 'react'
 import myImage from "../assets/images/715272_l.jpg"
-// import myAvatar from "../assets/images/Valorant_icon.png"
 import JobInfo from "./jobInfo"
+import {
+  Link
+} from "react-router-dom";
 
 export default function FeaturedJob() {
   return (
-    <div style={styles.featuredJob}>
-      <img src={myImage} style={styles.banner} alt="banner"></img>
-      <div style={styles.jobInfo}>
-        <JobInfo />
+    <Link to={"/jobdetail"}>
+      <div style={styles.featuredJob}>
+        <img src={myImage} style={styles.banner} alt="banner"></img>
+        <div style={styles.jobInfo}>
+          <JobInfo />
+        </div>
       </div>
-    </div>
+    </Link>
   )
 }
 

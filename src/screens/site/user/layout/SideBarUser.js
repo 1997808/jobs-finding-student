@@ -50,7 +50,6 @@ export default function SideBarUser() {
 
       <div style={styles.funcContainer}>
         <Item iconName="fa-home" text="Trang chủ" url="" />
-        <Item iconName="fa-user" text="Tài khoản" url="/account" />
         <Item iconName="fa-id-card" text="Mô tả" url="/info" />
         <Item iconName="fa-cog" text="Cài đặt" url="/setting" />
         <Item iconName="fa-info-circle" text="Về chúng tôi" url="/aboutus" />

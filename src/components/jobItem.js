@@ -1,12 +1,16 @@
 import React from 'react'
-// import myAvatar from "../assets/images/Valorant_icon.png"
 import JobInfo from "./jobInfo"
+import {
+  Link
+} from "react-router-dom";
 
 export default function JobItem() {
   return (
-    <div style={styles.jobNormal}>
-      <JobInfo />
-    </div>
+    <Link to={"/jobdetail"}>
+      <div style={styles.jobNormal}>
+        <JobInfo />
+      </div>
+    </Link>
   )
 }
 

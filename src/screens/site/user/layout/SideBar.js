@@ -34,7 +34,6 @@ export default function SideBar() {
       </Link>
       <div style={styles.funcContainer}>
         <Item iconName="fa-home" text="Trang chủ" url="" />
-        <Item iconName="fa-cog" text="Cài đặt" url="/setting" />
         <Item iconName="fa-info-circle" text="Về chúng tôi" url="/aboutus" />
       </div>
     </div >
