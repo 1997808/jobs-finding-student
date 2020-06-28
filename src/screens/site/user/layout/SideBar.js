@@ -35,7 +35,7 @@ export default function SideBar() {
       <div style={styles.funcContainer}>
         <Item iconName="fa-home" text="Trang chủ" url="" />
         <Item iconName="fa-cog" text="Cài đặt" url="/setting" />
-        <Item iconName="fa-info-circle" text="Về chúng tôi" url="/about" />
+        <Item iconName="fa-info-circle" text="Về chúng tôi" url="/aboutus" />
       </div>
     </div >
   )
@@ -69,7 +69,7 @@ const styles = {
 
   banner: {
     width: "100%",
-    height: "200px",
+    height: "170px",
     objectFit: "cover",
     marginBottom: "45px",
   },
@@ -80,15 +80,15 @@ const styles = {
     borderRadius: "5px",
     boxShadow: "0 0 0 5px #fff",
     position: "absolute",
-    top: "170px",
+    top: "140px",
     zIndex: 10,
   },
 
   funcContainer: {
     width: "100%",
     height: "auto",
-    borderTop: "1px solid #eee",
-    borderBottom: "1px solid #eee",
+    // borderTop: "1px solid #eee",
+    // borderBottom: "1px solid #eee",
   },
 
   funcItem: {

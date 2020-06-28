@@ -1,6 +1,6 @@
 import React from 'react'
-import myImage from "../../../../assets/images/715272_l.jpg"
-import myAvatar from "../../../../assets/images/Valorant_icon.png"
+import myImage from "../../../../assets/images/small.jpg"
+import myAvatar from "../../../../assets/images/avatars-000364906919-fdvn9m-t500x500.jpg"
 import {
   Link
 } from "react-router-dom";
@@ -30,15 +30,30 @@ export default function SideBarUser() {
     <div style={drawerActive ? drawerClick : drawer}>
       <img onClick={() => dispatch(toggleDrawer())} style={styles.banner} src={myImage} alt="img"></img>
       <img style={styles.avatar} src={myAvatar} alt="img"></img>
-      {/* <h4 style={styles.text}
-        
-      </h4> */}
+      <h3>Lê Nguyễn Hoàng</h3>
+      <p style={styles.text}>lenguyenhoang@gmail.ptit.com</p>
+
+      <div style={styles.infoContainer}>
+        <div style={styles.infoShow}>
+          <h4>3</h4>
+          <p style={styles.text}>Đề xuất</p>
+        </div>
+        <div style={styles.infoShow}>
+          <h4>14</h4>
+          <p style={styles.text}>Quan tâm</p>
+        </div>
+        <div style={styles.infoShow}>
+          <h4>2</h4>
+          <p style={styles.text}>Ứng tuyển</p>
+        </div>
+      </div>
+
       <div style={styles.funcContainer}>
         <Item iconName="fa-home" text="Trang chủ" url="" />
         <Item iconName="fa-user" text="Tài khoản" url="/account" />
         <Item iconName="fa-id-card" text="Mô tả" url="/info" />
         <Item iconName="fa-cog" text="Cài đặt" url="/setting" />
-        <Item iconName="fa-info-circle" text="Về chúng tôi" url="/about" />
+        <Item iconName="fa-info-circle" text="Về chúng tôi" url="/aboutus" />
         <div onClick={() => {
           logout()
           dispatch(toggleDrawer())
@@ -78,7 +93,7 @@ const styles = {
 
   banner: {
     width: "100%",
-    height: "200px",
+    height: "170px",
     objectFit: "cover",
     marginBottom: "45px",
   },
@@ -89,15 +104,32 @@ const styles = {
     borderRadius: "5px",
     boxShadow: "0 0 0 5px #fff",
     position: "absolute",
-    top: "170px",
+    top: "140px",
     zIndex: 10,
+  },
+
+  infoContainer: {
+    width: "100%",
+    height: "auto",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    borderTop: "1px solid #eee",
+    borderBottom: "1px solid #eee",
+    margin: "15px 0",
+    padding: "0 15px"
+  },
+
+  infoShow: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "10px 15px"
   },
 
   funcContainer: {
     width: "100%",
     height: "auto",
-    borderTop: "1px solid #eee",
-    borderBottom: "1px solid #eee",
   },
 
   funcItem: {
@@ -109,7 +141,9 @@ const styles = {
   },
 
   text: {
-    marginBottom: "30px"
+    fontSize: "12px",
+    fontWeight: "300",
+    marginTop: "2px"
   },
 
   icon: {
