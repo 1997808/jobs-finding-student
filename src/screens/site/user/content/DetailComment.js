@@ -1,5 +1,4 @@
 import React from 'react'
-import Title from "../../../../components/title"
 
 function Comment(props) {
   const { number, iconName, text, date, comment } = props
