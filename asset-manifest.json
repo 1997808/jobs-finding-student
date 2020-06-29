@@ -1,29 +1,38 @@
 {
   "files": {
     "main.css": "/jobs-finding-student/static/css/main.a512f0d9.chunk.css",
-    "main.js": "/jobs-finding-student/static/js/main.e64322d9.chunk.js",
-    "main.js.map": "/jobs-finding-student/static/js/main.e64322d9.chunk.js.map",
+    "main.js": "/jobs-finding-student/static/js/main.e245d9c6.chunk.js",
+    "main.js.map": "/jobs-finding-student/static/js/main.e245d9c6.chunk.js.map",
     "runtime-main.js": "/jobs-finding-student/static/js/runtime-main.90d0513c.js",
     "runtime-main.js.map": "/jobs-finding-student/static/js/runtime-main.90d0513c.js.map",
-    "static/js/2.6ca453f0.chunk.js": "/jobs-finding-student/static/js/2.6ca453f0.chunk.js",
-    "static/js/2.6ca453f0.chunk.js.map": "/jobs-finding-student/static/js/2.6ca453f0.chunk.js.map",
+    "static/js/2.c5287f0d.chunk.js": "/jobs-finding-student/static/js/2.c5287f0d.chunk.js",
+    "static/js/2.c5287f0d.chunk.js.map": "/jobs-finding-student/static/js/2.c5287f0d.chunk.js.map",
     "index.html": "/jobs-finding-student/index.html",
-    "precache-manifest.bb1885749aae55eb3b98884356785638.js": "/jobs-finding-student/precache-manifest.bb1885749aae55eb3b98884356785638.js",
+    "precache-manifest.cf56efce62948d5ac1ffe95f40386cb9.js": "/jobs-finding-student/precache-manifest.cf56efce62948d5ac1ffe95f40386cb9.js",
     "service-worker.js": "/jobs-finding-student/service-worker.js",
     "static/css/main.a512f0d9.chunk.css.map": "/jobs-finding-student/static/css/main.a512f0d9.chunk.css.map",
-    "static/js/2.6ca453f0.chunk.js.LICENSE.txt": "/jobs-finding-student/static/js/2.6ca453f0.chunk.js.LICENSE.txt",
+    "static/js/2.c5287f0d.chunk.js.LICENSE.txt": "/jobs-finding-student/static/js/2.c5287f0d.chunk.js.LICENSE.txt",
     "static/media/1_qdFdhbR00beEaIKDI_WDCw.gif": "/jobs-finding-student/static/media/1_qdFdhbR00beEaIKDI_WDCw.ad3b1512.gif",
     "static/media/715272_l.jpg": "/jobs-finding-student/static/media/715272_l.d0520dda.jpg",
+    "static/media/77755e565ef7ddbff2546231cd8732bf.png": "/jobs-finding-student/static/media/77755e565ef7ddbff2546231cd8732bf.e00d0ddc.png",
     "static/media/IMG_20190317_171216.jpg": "/jobs-finding-student/static/media/IMG_20190317_171216.493c865a.jpg",
+    "static/media/PizzaPlanet.png": "/jobs-finding-student/static/media/PizzaPlanet.51bc2e8f.png",
     "static/media/Screenshot from 2020-06-29 11-08-24.png": "/jobs-finding-student/static/media/Screenshot from 2020-06-29 11-08-24.21a5e58c.png",
     "static/media/Screenshot from 2020-06-29 11-10-34.png": "/jobs-finding-student/static/media/Screenshot from 2020-06-29 11-10-34.485ea459.png",
+    "static/media/ShareX_Logo.png": "/jobs-finding-student/static/media/ShareX_Logo.61e76971.png",
     "static/media/avatars-000364906919-fdvn9m-t500x500.jpg": "/jobs-finding-student/static/media/avatars-000364906919-fdvn9m-t500x500.70b2c081.jpg",
-    "static/media/small.jpg": "/jobs-finding-student/static/media/small.18299343.jpg"
+    "static/media/communication-flat-icon_1262-18771.jpg": "/jobs-finding-student/static/media/communication-flat-icon_1262-18771.34b748a6.jpg",
+    "static/media/nikon.png": "/jobs-finding-student/static/media/nikon.f4e4ef49.png",
+    "static/media/people-using-digital-devices-modern-office_1262-19462.jpg": "/jobs-finding-student/static/media/people-using-digital-devices-modern-office_1262-19462.28db2d4c.jpg",
+    "static/media/pringle.png": "/jobs-finding-student/static/media/pringle.1795360d.png",
+    "static/media/razer-logo-facebook-og.png": "/jobs-finding-student/static/media/razer-logo-facebook-og.74ea736a.png",
+    "static/media/small.jpg": "/jobs-finding-student/static/media/small.18299343.jpg",
+    "static/media/teamwork_white_1_dribbble-01-01_2x.png": "/jobs-finding-student/static/media/teamwork_white_1_dribbble-01-01_2x.084401ee.png"
   },
   "entrypoints": [
     "static/js/runtime-main.90d0513c.js",
-    "static/js/2.6ca453f0.chunk.js",
+    "static/js/2.c5287f0d.chunk.js",
     "static/css/main.a512f0d9.chunk.css",
-    "static/js/main.e64322d9.chunk.js"
+    "static/js/main.e245d9c6.chunk.js"
   ]
 }
