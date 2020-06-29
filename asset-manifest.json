@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/jobs-finding-student/static/css/main.a512f0d9.chunk.css",
+    "main.js": "/jobs-finding-student/static/js/main.63ce8bf2.chunk.js",
+    "main.js.map": "/jobs-finding-student/static/js/main.63ce8bf2.chunk.js.map",
+    "runtime-main.js": "/jobs-finding-student/static/js/runtime-main.90d0513c.js",
+    "runtime-main.js.map": "/jobs-finding-student/static/js/runtime-main.90d0513c.js.map",
+    "static/js/2.e6538581.chunk.js": "/jobs-finding-student/static/js/2.e6538581.chunk.js",
+    "static/js/2.e6538581.chunk.js.map": "/jobs-finding-student/static/js/2.e6538581.chunk.js.map",
+    "index.html": "/jobs-finding-student/index.html",
+    "precache-manifest.db29c257e322ee5ddeb548d59aa40096.js": "/jobs-finding-student/precache-manifest.db29c257e322ee5ddeb548d59aa40096.js",
+    "service-worker.js": "/jobs-finding-student/service-worker.js",
+    "static/css/main.a512f0d9.chunk.css.map": "/jobs-finding-student/static/css/main.a512f0d9.chunk.css.map",
+    "static/js/2.e6538581.chunk.js.LICENSE.txt": "/jobs-finding-student/static/js/2.e6538581.chunk.js.LICENSE.txt",
+    "static/media/1_qdFdhbR00beEaIKDI_WDCw.gif": "/jobs-finding-student/static/media/1_qdFdhbR00beEaIKDI_WDCw.ad3b1512.gif",
+    "static/media/715272_l.jpg": "/jobs-finding-student/static/media/715272_l.d0520dda.jpg",
+    "static/media/IMG_20190317_171216.jpg": "/jobs-finding-student/static/media/IMG_20190317_171216.493c865a.jpg",
+    "static/media/Screenshot from 2020-06-29 11-08-24.png": "/jobs-finding-student/static/media/Screenshot from 2020-06-29 11-08-24.21a5e58c.png",
+    "static/media/Screenshot from 2020-06-29 11-10-34.png": "/jobs-finding-student/static/media/Screenshot from 2020-06-29 11-10-34.485ea459.png",
+    "static/media/avatars-000364906919-fdvn9m-t500x500.jpg": "/jobs-finding-student/static/media/avatars-000364906919-fdvn9m-t500x500.70b2c081.jpg",
+    "static/media/small.jpg": "/jobs-finding-student/static/media/small.18299343.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90d0513c.js",
+    "static/js/2.e6538581.chunk.js",
+    "static/css/main.a512f0d9.chunk.css",
+    "static/js/main.63ce8bf2.chunk.js"
+  ]
+}
