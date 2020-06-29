@@ -43,7 +43,11 @@ export default function SignIn() {
           <h5 style={styles.forgetText}>Quên mật khâu?</h5>
         </div>
 
-        <button onClick={() => handleLogin()} style={styles.submitBtn} type="submit" >
+        <button
+          onClick={() => handleLogin()}
+          style={styles.submitBtn}
+        //type="submit"
+        >
           <Link to={"/"}>Đăng nhập</Link>
         </button>
       </form>

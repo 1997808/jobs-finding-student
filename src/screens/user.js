@@ -33,7 +33,7 @@ export default function UserContainer() {
     <Switch>
       <PublicRoute restricted={false} layout={HeaderBarLayout} exact path="/" component={Home} />
       <PublicRoute restricted={false} layout={HeaderBarLayout} exact path="/findjob" component={FindJob} />
-      <PublicRoute restricted={false} layout={HeaderBarLayout} path="/jobdetail" component={JobDetail} />
+      <PublicRoute restricted={false} layout={FlatLayout} path="/jobdetail" component={JobDetail} />
       <PrivateRoute layout={HeaderBarLayout} path="/recruiting" component={Recruiting} />
       <PrivateRoute layout={HeaderBarLayout} path="/following" component={Following} />
       <PrivateRoute layout={HeaderBarLayout} path="/notification" component={Notification} />

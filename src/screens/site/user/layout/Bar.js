@@ -43,12 +43,13 @@ const styles = {
   icon: {
     fontSize: "24px",
     padding: "18px",
-    color: "#dddddd"
+    color: "#eee",
+    transition: "all 0.2s linear",
   },
 
   iconActive: {
-    // fontSize: "30px",
-    // padding: "15px",
-    color: "#5160FF"
+    //color: "#5160FF",
+    color: "#45B6FF",
+    transition: "all 0.2s linear",
   }
 }

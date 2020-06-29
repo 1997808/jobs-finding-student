@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import {
+  Link
+} from "react-router-dom";
 
 export default function Finding() {
   const [textFind, setTextFind] = useState("")
@@ -15,9 +18,11 @@ export default function Finding() {
   return (
     <form onSubmit={handleSubmit} style={styles.form}>
       <input style={styles.input} type="text" onChange={handleChange} />
-      <button style={styles.submitBtn} type="submit" >
-        <i style={styles.icon} className={"fas fa-search"}></i>
-      </button>
+      <Link to={"/findjob"}>
+        <button style={styles.submitBtn} type="submit" >
+          <i style={styles.icon} className={"fas fa-search"}></i>
+        </button>
+      </Link>
     </form>
   )
 }

@@ -42,8 +42,8 @@ const styles = {
   },
 
   icon: {
-    fontSize: "24px",
+    fontSize: "16px",
     marginRight: "15px",
-    color: "#ddd"
+    color: "#bbb"
   },
 }

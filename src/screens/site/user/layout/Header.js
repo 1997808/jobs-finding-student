@@ -25,8 +25,9 @@ const styles = {
     height: "60px",
     padding: "0 15px",
     top: 0,
-    background: "#5160FF",
-    // background: "#fff",
+    // background: "#5160FF",
+    backgroundImage: "linear-gradient(to bottom right, #5160FF, #45B6FF)",
+    // background: "#fff", #45B6FF
     position: "fixed",
     display: "flex",
     justifyContent: "space-between",

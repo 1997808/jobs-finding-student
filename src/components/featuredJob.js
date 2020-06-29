@@ -5,13 +5,16 @@ import {
   Link
 } from "react-router-dom";
 
+const avatar = ["Google.png", "nikon.png", "PizzaPlanet.png", "pringle.png", "ShareX_Logo.png", "Valorant_icon.png"]
+let avatarRandom = avatar[Math.floor(Math.random() * avatar.length)]
+
 export default function FeaturedJob() {
   return (
     <Link to={"/jobdetail"}>
       <div style={styles.featuredJob}>
         <img src={myImage} style={styles.banner} alt="banner"></img>
         <div style={styles.jobInfo}>
-          <JobInfo />
+          <JobInfo avatarRandom={avatarRandom} />
         </div>
       </div>
     </Link>

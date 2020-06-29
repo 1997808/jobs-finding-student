@@ -24,9 +24,7 @@ export default function AboutUs() {
         </div>
         <img src={myProject} style={styles.banner2} alt="banner"></img>
         <img src={myProject2} style={styles.banner2} alt="banner"></img>
-
       </div>
-
     </React.Fragment >
   )
 }

@@ -4,11 +4,14 @@ import {
   Link
 } from "react-router-dom";
 
+const avatar = ["Google.png", "nikon.png", "PizzaPlanet.png", "pringle.png", "ShareX_Logo.png", "Valorant_icon.png"]
+let avatarRandom = avatar[Math.floor(Math.random() * avatar.length)]
+
 export default function JobItem() {
   return (
     <Link to={"/jobdetail"}>
       <div style={styles.jobNormal}>
-        <JobInfo />
+        <JobInfo avatarRandom={avatarRandom} />
       </div>
     </Link>
   )

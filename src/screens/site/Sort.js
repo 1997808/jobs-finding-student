@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import Title from '../../components/title'
+import {
+  Link
+} from "react-router-dom";
 
 export default function Sort() {
   const [textFind, setTextFind] = useState("")
@@ -19,13 +22,17 @@ export default function Sort() {
 
       <Title title="Sắp xếp theo" />
       <select style={styles.input}>
-        <option style={styles.input} value="grapefruit">Grapefruit</option>
-        <option value="lime">Lime</option>
-        <option selected value="coconut">Coconut</option>
-        <option value="mango">Mango</option>
+        <option selected value="grapefruit">Mặc định</option>
+        <option value="lime">Ngày đăng (cũ nhất)</option>
+        <option value="coconut">Lương (cao - thấp)</option>
+        <option value="coconut">Lương (thấp - cao)</option>
+        <option value="coconut">Đánh giá (cao - thấp)</option>
+        <option value="coconut">Đánh giá (thấp - cao)</option>
       </select>
       <div style={styles.btnContainer}>
-        <button style={styles.submitBtn} type="submit" >Áp dụng</button>
+        <Link to={"/findjob"} style={styles.container}>
+          <button style={styles.submitBtn} type="submit" >Áp dụng</button>
+        </Link>
         <button style={styles.btn} type="submit" >Làm lại</button>
       </div>
     </form>
@@ -64,6 +71,11 @@ const styles = {
     justifyContent: "space-between",
     alignItems: "center",
     borderTop: "1px solid #eee"
+  },
+
+  container: {
+    width: "100%",
+    height: "auto",
   },
 
   submitBtn: {

@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 import Title from '../../components/title'
+import {
+  Link
+} from "react-router-dom";
+
 
 export default function Filter() {
   const [textFind, setTextFind] = useState("")
@@ -19,38 +23,44 @@ export default function Filter() {
 
       <Title title="Địa điểm" />
       <select style={styles.input}>
-        <option style={styles.input} value="grapefruit">Grapefruit</option>
-        <option value="lime">Lime</option>
-        <option selected value="coconut">Coconut</option>
-        <option value="mango">Mango</option>
+        <option selected value="grapefruit">Hà Nội</option>
+        <option value="lime">Đà Nẵng</option>
+        <option value="coconut">Hồ Chí Minh</option>
+        <option value="default">Mặc Định</option>
       </select>
 
       <Title title="Thời gian làm" />
       <select style={styles.input}>
-        <option value="grapefruit">Grapefruit</option>
-        <option value="lime">Lime</option>
-        <option selected value="coconut">Coconut</option>
-        <option value="mango">Mango</option>
+        <option value="grapefruit">Parttime</option>
+        <option value="lime">Fulltime</option>
+        <option selected value="coconut">Tự do</option>
+        <option value="default">Mặc Định</option>
       </select>
 
       <Title title="Lương" />
       <select style={styles.input}>
-        <option value="grapefruit">Grapefruit</option>
-        <option value="lime">Lime</option>
-        <option selected value="coconut">Coconut</option>
-        <option value="mango">Mango</option>
+        <option value="grapefruit">Dưới 2 triệu</option>
+        <option value="lime">2 triệu - 4 triệu</option>
+        <option selected value="coconut">4 triệu - 6 triệu</option>
+        <option value="default">Trên 6 triệu</option>
       </select>
 
       <Title title="Mức đánh giá" />
       <select style={styles.input}>
-        <option value="grapefruit">Grapefruit</option>
-        <option value="lime">Lime</option>
-        <option selected value="coconut">Coconut</option>
-        <option value="mango">Mango</option>
+        <option value="grapefruit">Trên 1 sao</option>
+        <option value="lime">Trên 2 sao</option>
+        <option selected value="coconut">Trên 3 sao</option>
+        <option value="mango">Trên 4 sao</option>
+        <option value="default">Mặc Định</option>
       </select>
 
       <div style={styles.btnContainer}>
-        <button style={styles.submitBtn} type="submit" >Áp dụng</button>
+        <Link to={"/findjob"} style={styles.container}>
+          <button
+            style={styles.submitBtn}
+          // type="submit"
+          >Áp dụng</button>
+        </Link>
         <button style={styles.btn} type="submit" >Làm lại</button>
       </div>
     </form>
@@ -89,6 +99,11 @@ const styles = {
     justifyContent: "space-between",
     alignItems: "center",
     borderTop: "1px solid #eee"
+  },
+
+  container: {
+    width: "100%",
+    height: "auto",
   },
 
   submitBtn: {

@@ -82,12 +82,12 @@ const styles = {
   },
   drawer: {
     transform: "translateX(-75vw)",
-    transition: "transform 0.3s ease-out",
+    transition: "transform 0.2s linear",
   },
 
   drawerActive: {
     transform: "translateX(0)",
-    transition: "transform 0.3s ease-out",
+    transition: "transform 0.2s linear",
   },
 
   banner: {
@@ -148,6 +148,6 @@ const styles = {
   icon: {
     fontSize: "16px",
     marginRight: "15px",
-    color: "#ddd"
+    color: "#bbb"
   },
 }

@@ -6,8 +6,11 @@ import DetailJob from "./user/content/DetailJob"
 import DetailCompany from "./user/content/DetailCompany"
 import DetailComment from "./user/content/DetailComment"
 
+const avatar = ["Google.png", "nikon.png", "PizzaPlanet.png", "pringle.png", "ShareX_Logo.png", "Valorant_icon.png"]
+let avatarRandom = avatar[Math.floor(Math.random() * avatar.length)]
+
 export default function JobDetail() {
-  const [content, setContent] = useState("comment")
+  const [content, setContent] = useState("detail")
   const handleContent = (page) => {
     setContent(page)
   }
@@ -16,7 +19,7 @@ export default function JobDetail() {
       <div className="row" style={styles.container}>
         <img src={myImage} style={styles.banner} alt="ava"></img>
         <div style={styles.jobNormal}>
-          <JobInfo />
+          <JobInfo avatarRandom={avatarRandom} />
         </div>
       </div>
 

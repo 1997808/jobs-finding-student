@@ -1,10 +1,11 @@
 import React from 'react'
-import myAvatar from "../assets/images/Valorant_icon.png"
+// import myAvatar from "../assets/images/Valorant_icon.png"
 
-export default function JobInfo() {
+export default function JobInfo(props) {
+  const { avatarRandom } = props
   return (
     <React.Fragment>
-      <img src={myAvatar} style={styles.avatar} alt="ava"></img>
+      <img src={require("../assets/images/" + avatarRandom)} style={styles.avatar} alt="ava"></img>
       <div style={styles.jobOverview}>
         <h4 style={styles.jobName}>Thực tập sinh thiết kế đa phương tiện năm 3 năm 4</h4>
         <h6 style={styles.text}>Công ty Cổ phần Pete Ite</h6>
@@ -43,6 +44,6 @@ const styles = {
   bookmark: {
     fontSize: "24px",
     padding: "18px 0",
-    color: "#ddd"
+    color: "#eee"
   },
 }
