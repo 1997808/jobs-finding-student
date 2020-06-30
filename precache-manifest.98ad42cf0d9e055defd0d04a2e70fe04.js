@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3b36ba06aa21750c8861d61a5eb4b470",
+    "revision": "f49df31c6c4f7d7360a57959218b5427",
     "url": "/jobs-finding-student/index.html"
   },
   {
-    "revision": "5505b58dbb72b56bfe94",
+    "revision": "3cfc3510f587f16a343f",
     "url": "/jobs-finding-student/static/css/main.a512f0d9.chunk.css"
   },
   {
-    "revision": "c10b1be77554df51fd0c",
-    "url": "/jobs-finding-student/static/js/2.c5287f0d.chunk.js"
+    "revision": "1547bb2feaeb75b8b963",
+    "url": "/jobs-finding-student/static/js/2.2f9826ee.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/jobs-finding-student/static/js/2.c5287f0d.chunk.js.LICENSE.txt"
+    "url": "/jobs-finding-student/static/js/2.2f9826ee.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5505b58dbb72b56bfe94",
-    "url": "/jobs-finding-student/static/js/main.e245d9c6.chunk.js"
+    "revision": "3cfc3510f587f16a343f",
+    "url": "/jobs-finding-student/static/js/main.bdfee042.chunk.js"
   },
   {
     "revision": "62393e1455f2f31b344f",

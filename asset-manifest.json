@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/jobs-finding-student/static/css/main.a512f0d9.chunk.css",
-    "main.js": "/jobs-finding-student/static/js/main.e245d9c6.chunk.js",
-    "main.js.map": "/jobs-finding-student/static/js/main.e245d9c6.chunk.js.map",
+    "main.js": "/jobs-finding-student/static/js/main.bdfee042.chunk.js",
+    "main.js.map": "/jobs-finding-student/static/js/main.bdfee042.chunk.js.map",
     "runtime-main.js": "/jobs-finding-student/static/js/runtime-main.90d0513c.js",
     "runtime-main.js.map": "/jobs-finding-student/static/js/runtime-main.90d0513c.js.map",
-    "static/js/2.c5287f0d.chunk.js": "/jobs-finding-student/static/js/2.c5287f0d.chunk.js",
-    "static/js/2.c5287f0d.chunk.js.map": "/jobs-finding-student/static/js/2.c5287f0d.chunk.js.map",
+    "static/js/2.2f9826ee.chunk.js": "/jobs-finding-student/static/js/2.2f9826ee.chunk.js",
+    "static/js/2.2f9826ee.chunk.js.map": "/jobs-finding-student/static/js/2.2f9826ee.chunk.js.map",
     "index.html": "/jobs-finding-student/index.html",
-    "precache-manifest.cf56efce62948d5ac1ffe95f40386cb9.js": "/jobs-finding-student/precache-manifest.cf56efce62948d5ac1ffe95f40386cb9.js",
+    "precache-manifest.98ad42cf0d9e055defd0d04a2e70fe04.js": "/jobs-finding-student/precache-manifest.98ad42cf0d9e055defd0d04a2e70fe04.js",
     "service-worker.js": "/jobs-finding-student/service-worker.js",
     "static/css/main.a512f0d9.chunk.css.map": "/jobs-finding-student/static/css/main.a512f0d9.chunk.css.map",
-    "static/js/2.c5287f0d.chunk.js.LICENSE.txt": "/jobs-finding-student/static/js/2.c5287f0d.chunk.js.LICENSE.txt",
+    "static/js/2.2f9826ee.chunk.js.LICENSE.txt": "/jobs-finding-student/static/js/2.2f9826ee.chunk.js.LICENSE.txt",
     "static/media/1_qdFdhbR00beEaIKDI_WDCw.gif": "/jobs-finding-student/static/media/1_qdFdhbR00beEaIKDI_WDCw.ad3b1512.gif",
     "static/media/715272_l.jpg": "/jobs-finding-student/static/media/715272_l.d0520dda.jpg",
     "static/media/77755e565ef7ddbff2546231cd8732bf.png": "/jobs-finding-student/static/media/77755e565ef7ddbff2546231cd8732bf.e00d0ddc.png",
@@ -31,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.90d0513c.js",
-    "static/js/2.c5287f0d.chunk.js",
+    "static/js/2.2f9826ee.chunk.js",
     "static/css/main.a512f0d9.chunk.css",
-    "static/js/main.e245d9c6.chunk.js"
+    "static/js/main.bdfee042.chunk.js"
   ]
 }
