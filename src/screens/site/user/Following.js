@@ -7,8 +7,6 @@ export default function Following() {
       <JobItem />
       <JobItem />
       <JobItem />
-      <JobItem />
-      <JobItem />
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { login } from '../../utils/index';
 import {
-  Link
+  Link,
 } from "react-router-dom";
 
 export default function SignIn() {
@@ -43,13 +43,13 @@ export default function SignIn() {
           <h5 style={styles.forgetText}>Quên mật khâu?</h5>
         </div>
 
-        <button
-          onClick={() => handleLogin()}
-          style={styles.submitBtn}
-        //type="submit"
-        >
-          <Link to={"/"}>Đăng nhập</Link>
-        </button>
+        <Link to={"/"}>
+          <button
+            onClick={() => handleLogin()}
+            style={styles.submitBtn}
+          //type="submit"
+          >Đăng nhập</button>
+        </Link>
       </form>
       <div style={styles.textContainer2}>
         <p>Chưa có tài khoản?</p>
@@ -127,7 +127,7 @@ const styles = {
     display: "flex",
     border: "none",
     borderRadius: "5px",
-    background: "#5160FF",
+    backgroundImage: "linear-gradient(to top left, #5160FF, #45B6FF)",
     justifyContent: "center",
     alignItems: "center"
   },
@@ -139,24 +139,3 @@ const styles = {
     marginTop: "60px"
   },
 }
-
-// import React from 'react';
-// import { login } from '../../utils';
-
-// const SignIn = (props) => {
-
-//   const handleLogin = () => {
-//     login();
-//     props.history.push('/dashboard');
-//   }
-
-//   return (
-//     <div>
-//       <h1>Sign in</h1>
-
-//       <button onClick={() => handleLogin()}>Click here to log in</button>
-//     </div>
-//   );
-// };
-
-// export default SignIn;

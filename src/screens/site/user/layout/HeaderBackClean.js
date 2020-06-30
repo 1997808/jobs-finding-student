@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function HeaderBack() {
+export default function HeaderBackClean() {
   const goBack = () => {
     window.history.back()
   }
@@ -17,7 +17,7 @@ const styles = {
     width: "100%",
     height: "60px",
     padding: "0 15px",
-    backgroundImage: "linear-gradient(to bottom right, #5160FF, #45B6FF)",
+    background: "#fff",
     display: "flex",
     alignItems: "center",
   },
@@ -25,6 +25,6 @@ const styles = {
   icon: {
     fontSize: "24px",
     padding: "18px 15px",
-    color: "#fff"
+    color: "#444"
   },
 }

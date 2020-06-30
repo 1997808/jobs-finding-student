@@ -112,7 +112,7 @@ const styles = {
     border: "none",
     color: "#fff",
     borderRadius: "5px",
-    background: "#5160FF",
+    backgroundImage: "linear-gradient(to top left, #5160FF, #45B6FF)",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

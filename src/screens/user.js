@@ -26,6 +26,7 @@ import NoMatch from './site/user/layout/NoMatch'
 import PrivateRoute from '../components/router/private';
 import PublicRoute from '../components/router/public';
 import FlatLayout from './layout/flat'
+import FlatCleanLayout from './layout/flatClean'
 import HeaderBarLayout from './layout/headerBar'
 
 export default function UserContainer() {
@@ -44,9 +45,9 @@ export default function UserContainer() {
       <PublicRoute layout={FlatLayout} restricted={false} path="/filter" component={Filter} />
       <PublicRoute layout={FlatLayout} restricted={false} path="/sort" component={Sort} />
       <PublicRoute layout={FlatLayout} restricted={false} path="/aboutus" component={AboutUs} />
-      <PublicRoute layout={FlatLayout} restricted={true} path="/signin" component={SignIn} />
-      <PublicRoute layout={FlatLayout} restricted={true} path="/signup" component={SignUp} />
-      <PublicRoute layout={FlatLayout} restricted={true} path="/signupe" component={SignUpE} />
+      <PublicRoute layout={FlatCleanLayout} restricted={true} path="/signin" component={SignIn} />
+      <PublicRoute layout={FlatCleanLayout} restricted={true} path="/signup" component={SignUp} />
+      <PublicRoute layout={FlatCleanLayout} restricted={true} path="/signupe" component={SignUpE} />
       <PublicRoute layout={FlatLayout} restricted={false} path="*" component={NoMatch} />
     </Switch >
   )

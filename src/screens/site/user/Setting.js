@@ -3,14 +3,27 @@ import myImage from "../../../assets/images/small.jpg"
 import myAvatar from "../../../assets/images/avatars-000364906919-fdvn9m-t500x500.jpg"
 
 export default function Setting() {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+  const [username, setUsername] = useState("Hoàng")
+  const [name, setName] = useState("Lê Nguyễn Hoàng")
+  const [phone, setPhone] = useState("0987654123")
+  const [email, setEmail] = useState("lenguyenhoang@gmail.ptit.com")
+  const [password, setPassword] = useState("123456")
 
-  const handleChangeEmail = (event) => {
-    setEmail(event.target.value);
+  const handleUsername = (event) => {
+    setUsername(event.target.value);
   }
 
-  const handleChangePassword = (event) => {
+  const handleName = (event) => {
+    setName(event.target.value);
+  }
+  const handlePhone = (event) => {
+    setPhone(event.target.value);
+  }
+
+  const handleEmail = (event) => {
+    setEmail(event.target.value);
+  }
+  const handlePassword = (event) => {
     setPassword(event.target.value);
   }
 
@@ -35,19 +48,19 @@ export default function Setting() {
 
       <form onSubmit={handleSubmit} style={styles.form}>
         <h4 style={styles.text}>Tên hiển thị</h4>
-        <input style={styles.input} type="text" onChange={handleChangeEmail} />
+        <input style={styles.input} type="text" onChange={handleUsername} value={username} />
 
         <h4 style={styles.text}>Họ tên</h4>
-        <input style={styles.input} type="text" onChange={handleChangeEmail} />
+        <input style={styles.input} type="text" onChange={handleName} value={name} />
 
         <h4 style={styles.text}>Số điện thoại</h4>
-        <input style={styles.input} type="number" onChange={handleChangeEmail} />
+        <input style={styles.input} type="number" onChange={handlePhone} value={phone} />
 
         <h4 style={styles.text}>Email</h4>
-        <input style={styles.input} type="email" onChange={handleChangeEmail} />
+        <input style={styles.input} type="email" onChange={handleEmail} value={email} />
 
         <h4 style={styles.text}>Mật khẩu</h4>
-        <input style={styles.input} type="password" onChange={handleChangePassword} />
+        <input style={styles.input} type="password" onChange={handlePassword} value={password} />
 
         <button style={styles.submitBtn} type="submit" >
           Lưu
@@ -102,7 +115,7 @@ const styles = {
     display: "flex",
     border: "none",
     borderRadius: "5px",
-    background: "#5160FF",
+    backgroundImage: "linear-gradient(to top left, #5160FF, #45B6FF)",
     justifyContent: "center",
     alignItems: "center"
   },

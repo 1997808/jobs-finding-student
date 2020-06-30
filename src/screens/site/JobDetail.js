@@ -14,6 +14,7 @@ export default function JobDetail() {
   const handleContent = (page) => {
     setContent(page)
   }
+
   return (
     <React.Fragment>
       <div className="row" style={styles.container}>
@@ -24,9 +25,9 @@ export default function JobDetail() {
       </div>
 
       <div style={styles.navigateBar}>
-        <h5 onClick={() => handleContent("detail")} style={styles.navTextActive}>Chi tiết công việc</h5>
-        <h5 onClick={() => handleContent("company")} style={styles.navText}>Công ty</h5>
-        <h5 onClick={() => handleContent("comment")} style={styles.navText}>Đánh giá</h5>
+        <h5 onClick={() => handleContent("detail")} style={content === "detail" ? styles.navTextActive : styles.navText}>Chi tiết công việc</h5>
+        <h5 onClick={() => handleContent("company")} style={content === "company" ? styles.navTextActive : styles.navText}>Công ty</h5>
+        <h5 onClick={() => handleContent("comment")} style={content === "comment" ? styles.navTextActive : styles.navText}>Đánh giá</h5>
       </div>
 
       <div style={styles.container2}>
@@ -36,6 +37,10 @@ export default function JobDetail() {
             <DetailCompany />
             : <DetailComment />
         }
+      </div>
+
+      <div style={styles.btnContainer}>
+        <button style={styles.submitBtn}>Nộp đơn ứng tuyển</button>
       </div>
     </React.Fragment>
   )
@@ -50,7 +55,7 @@ const styles = {
 
   container2: {
     marginTop: "15px",
-    marginBottom: "15px"
+    marginBottom: "75px"
   },
 
   banner: {
@@ -80,13 +85,14 @@ const styles = {
   navText: {
     padding: "5px 0",
     marginRight: "30px",
-    color: "#eee"
+    color: "#eee",
+    transition: "all 0.2s linear",
   },
 
   navTextActive: {
     padding: "5px 0",
     marginRight: "30px",
-    borderBottom: "3px solid #5160FF"
+    borderBottom: "3px solid #45B6FF",
   },
 
   infoContainer: {
@@ -119,5 +125,30 @@ const styles = {
   icon: {
     fontSize: "24px",
     color: "#ddd"
+  },
+
+  btnContainer: {
+    width: "100%",
+    height: "60px",
+    position: "fixed",
+    bottom: "0",
+    left: "0",
+    background: "#fff",
+    padding: "10px 30px",
+    borderTop: "1px solid #eee"
+  },
+
+  submitBtn: {
+    width: "100%",
+    height: "40px",
+    border: "none",
+    color: "#fff",
+    borderRadius: "5px",
+    // background: "#5160FF",
+    backgroundImage: "linear-gradient(to top left, #5160FF, #45B6FF)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: "10px"
   },
 }

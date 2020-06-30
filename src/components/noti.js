@@ -10,7 +10,7 @@ export default function Noti(props) {
       <div style={styles.noti}>
         <i style={styles.icon} className={"fas " + iconName}></i>
         <div style={styles.textContainer}>
-          <h6>Có thêm 1 công việc đề xuất mới: <span style={styles.notiDetail}>bạn có biết: chỉ cần bấm vào thanh Tìm kiếm, là bạn có thể xem ngay</span> </h6>
+          <h6>Có thêm 1 công việc đề xuất mới <span style={styles.notiDetail}>chỉ cần bấm vào thanh Tìm kiếm là bạn có thể xem ngay</span> </h6>
           <h6 style={styles.time}>{time}</h6>
         </div>
       </div>
@@ -23,7 +23,6 @@ const styles = {
     width: "100%",
     height: "auto",
     display: "flex",
-    alignItems: "center",
     background: "#fff",
     padding: "15px",
     borderRadius: "5px",
@@ -37,13 +36,15 @@ const styles = {
   },
 
   time: {
+    textAlign: "right",
     paddingTop: "5px",
     fontWeight: "300",
   },
 
   icon: {
     fontSize: "16px",
+    paddingTop: "6px",
     marginRight: "15px",
-    color: "#bbb"
+    color: "#45B6FF"
   },
 }

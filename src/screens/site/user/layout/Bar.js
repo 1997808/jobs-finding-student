@@ -48,8 +48,8 @@ const styles = {
   },
 
   iconActive: {
-    //color: "#5160FF",
-    color: "#45B6FF",
+    color: "#5160FF",
+    // color: "#45B6FF",
     transition: "all 0.2s linear",
   }
 }

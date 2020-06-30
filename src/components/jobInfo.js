@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import myAvatar from "../assets/images/Valorant_icon.png"
 
 export default function JobInfo(props) {
   const { avatarRandom } = props
+  const [bookmark, setBookmark] = useState(false)
+
   return (
     <React.Fragment>
       <img src={require("../assets/images/" + avatarRandom)} style={styles.avatar} alt="ava"></img>
@@ -12,7 +14,11 @@ export default function JobInfo(props) {
         <h6 style={styles.text}>Hà Nội</h6>
         <h6 style={styles.text2}>Bạn còn 9 ngày để ứng tuyển</h6>
       </div>
-      <i style={styles.bookmark} className={"fas fa-bookmark"}></i>
+      <i
+        onClick={() => setBookmark(!bookmark)}
+        style={bookmark ? styles.bookmarkActive : styles.bookmark}
+        className={"fas fa-bookmark"}
+      ></i>
     </React.Fragment>
   )
 }
@@ -44,6 +50,14 @@ const styles = {
   bookmark: {
     fontSize: "24px",
     padding: "18px 0",
-    color: "#eee"
+    color: "#eee",
+    transition: "all 0.2s linear",
+  },
+
+  bookmarkActive: {
+    fontSize: "24px",
+    padding: "18px 0",
+    color: "#45B6FF",
+    transition: "all 0.2s linear",
   },
 }

@@ -27,6 +27,7 @@ export default function SideBar() {
 
   return (
     <div style={drawerActive ? drawerClick : drawer}>
+      <i onClick={() => dispatch(toggleDrawer())} style={styles.iconBack} className={"fas fa-angle-left"}></i>
       <img onClick={() => dispatch(toggleDrawer())} style={styles.banner} src={myImage} alt="img"></img>
       <img style={styles.avatar} src={myAvatar} alt="img"></img>
       <Link to={"/signin"}>
@@ -104,5 +105,13 @@ const styles = {
     fontSize: "16px",
     marginRight: "15px",
     color: "#bbb"
+  },
+
+  iconBack: {
+    position: "absolute",
+    left: "15px",
+    fontSize: "24px",
+    padding: "18px 15px",
+    color: "#fff"
   },
 }
