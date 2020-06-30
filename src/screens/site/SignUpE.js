@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { login } from '../../utils/index';
 import {
   Link
 } from "react-router-dom";
@@ -7,10 +6,6 @@ import {
 export default function SignUp() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
-
-  const handleLogin = () => {
-    login();
-  }
 
   const handleChangeEmail = (event) => {
     setEmail(event.target.value);
@@ -51,7 +46,7 @@ export default function SignUp() {
           </label>
         </div>
 
-        <button onClick={() => handleLogin()} style={styles.submitBtn} type="submit" >
+        <button style={styles.submitBtn} type="submit" >
           Đăng kí
         </button>
       </form>

@@ -34,10 +34,10 @@ export default function Filter() {
     setStar("default")
   }
 
-  const handleSubmit = (event) => {
-    alert('An essay was submitted: ');
-    event.preventDefault();
-  }
+  // const handleSubmit = (event) => {
+  //   alert('An essay was submitted: ');
+  //   event.preventDefault();
+  // }
 
   return (
     <form style={styles.form}> {/* onSubmit={handleSubmit} */}

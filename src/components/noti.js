@@ -8,7 +8,9 @@ export default function Noti(props) {
   return (
     <Link to={url}>
       <div style={styles.noti}>
-        <i style={styles.icon} className={"fas " + iconName}></i>
+        <div style={styles.colorBar}>
+          <i style={styles.icon} className={"fas " + iconName}></i>
+        </div>
         <div style={styles.textContainer}>
           <h6>Có thêm 1 công việc đề xuất mới <span style={styles.notiDetail}>chỉ cần bấm vào thanh Tìm kiếm là bạn có thể xem ngay</span> </h6>
           <h6 style={styles.time}>{time}</h6>
@@ -28,6 +30,21 @@ const styles = {
     borderRadius: "5px",
     boxShadow: "0 2px 4px #bbb",
     marginBottom: "10px",
+    justifyContent: "space-between",
+  },
+
+  colorBar: {
+    width: "30px",
+    height: "30px",
+    backgroundImage: "linear-gradient(to top left, #444, #bbb)",
+    borderRadius: "5px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  textContainer: {
+    width: "calc(100% - 45px)"
   },
 
   notiDetail: {
@@ -42,9 +59,7 @@ const styles = {
   },
 
   icon: {
-    fontSize: "16px",
-    paddingTop: "6px",
-    marginRight: "15px",
-    color: "#45B6FF"
+    fontSize: "12px",
+    color: "#fff"
   },
 }

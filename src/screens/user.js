@@ -38,13 +38,13 @@ export default function UserContainer() {
       <PrivateRoute layout={HeaderBarLayout} path="/recruiting" component={Recruiting} />
       <PrivateRoute layout={HeaderBarLayout} path="/following" component={Following} />
       <PrivateRoute layout={HeaderBarLayout} path="/notification" component={Notification} />
-      <PrivateRoute layout={HeaderBarLayout} path="/addcomment" component={AddComment} />
+      <PrivateRoute layout={FlatLayout} path="/addcomment" component={AddComment} />
       <PrivateRoute layout={FlatLayout} restricted={false} path="/setting" component={Setting} />
       <PrivateRoute layout={FlatLayout} path="/info" component={Info} />
       <PublicRoute layout={FlatLayout} restricted={false} path="/finding" component={Finding} />
       <PublicRoute layout={FlatLayout} restricted={false} path="/filter" component={Filter} />
       <PublicRoute layout={FlatLayout} restricted={false} path="/sort" component={Sort} />
-      <PublicRoute layout={FlatLayout} restricted={false} path="/aboutus" component={AboutUs} />
+      <PublicRoute layout={FlatCleanLayout} restricted={false} path="/aboutus" component={AboutUs} />
       <PublicRoute layout={FlatCleanLayout} restricted={true} path="/signin" component={SignIn} />
       <PublicRoute layout={FlatCleanLayout} restricted={true} path="/signup" component={SignUp} />
       <PublicRoute layout={FlatCleanLayout} restricted={true} path="/signupe" component={SignUpE} />

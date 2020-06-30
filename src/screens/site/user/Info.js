@@ -5,7 +5,7 @@ export default function Info() {
   const [experience, setExperience] = useState("CASHIER - 09/2017 đến 05/2019 SEARS - CỬA HÀNG,  Hà Nội Cung cấp dịch vụ khách hàng đặc biệt để phân biệt và quảng bá thương hiệu công ty. Hợp tác với các thành viên nhóm dịch vụ khách hàng để cung cấp dịch vụ đặc biệt trong toàn bộ trải nghiệm mua sắm và mua hàng. Giữ dòng thanh toán sạch sẽ mọi lúc và duy trì màn hình sản phẩm gọn gàng, ngăn nắp. Mentor và huấn luyện viên thu ngân mới.")
   const [certificate, setCertificate] = useState("Chứng chỉ Tiếng Anh Toeic - 2018")
   const [other, setOther] = useState("")
-  const [row, setRow] = useState(10)
+  // const [row, setRow] = useState(10)
 
   const handleEducation = (event) => {
     setEducation(event.target.value);
@@ -34,7 +34,7 @@ export default function Info() {
         <h4 style={styles.text}>Kinh nghiệm làm việc</h4>
         <textarea
           style={styles.textarea}
-          rows={row}
+          rows={10}
           value={experience}
           onChange={(event) => {
             handleExperience(event)
@@ -95,7 +95,7 @@ const styles = {
     display: "flex",
     border: "none",
     borderRadius: "5px",
-    background: "#5160FF",
+    backgroundImage: "linear-gradient(to top left, #5160FF, #45B6FF)",
     justifyContent: "center",
     alignItems: "center"
   },

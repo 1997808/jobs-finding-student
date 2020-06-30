@@ -15,10 +15,10 @@ export default function Sort() {
     setSort("default")
   }
 
-  const handleSubmit = (event) => {
-    alert('An essay was submitted: ');
-    event.preventDefault();
-  }
+  // const handleSubmit = (event) => {
+  //   alert('An essay was submitted: ');
+  //   event.preventDefault();
+  // }
 
   return (
     <form style={styles.form}> {/* onSubmit={handleSubmit} */}

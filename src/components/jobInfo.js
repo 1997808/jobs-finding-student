@@ -1,9 +1,18 @@
 import React, { useState } from 'react'
 // import myAvatar from "../assets/images/Valorant_icon.png"
+// import Alert from "./alert"
 
 export default function JobInfo(props) {
   const { avatarRandom } = props
   const [bookmark, setBookmark] = useState(false)
+
+  // const handleAlert = () => {
+  //   if (bookmark) {
+  //     return (
+  //       <Alert />
+  //     )
+  //   }
+  // }
 
   return (
     <React.Fragment>
@@ -15,11 +24,14 @@ export default function JobInfo(props) {
         <h6 style={styles.text2}>Bạn còn 9 ngày để ứng tuyển</h6>
       </div>
       <i
-        onClick={() => setBookmark(!bookmark)}
+        onClick={() => {
+          setBookmark(!bookmark)
+          // handleAlert()
+        }}
         style={bookmark ? styles.bookmarkActive : styles.bookmark}
         className={"fas fa-bookmark"}
       ></i>
-    </React.Fragment>
+    </React.Fragment >
   )
 }
 

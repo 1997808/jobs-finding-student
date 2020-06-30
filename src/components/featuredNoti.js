@@ -38,7 +38,7 @@ const styles = {
     width: "40px",
     height: "40px",
     backgroundImage: "linear-gradient(to top left, #5160FF, #45B6FF)",
-    borderRadius: "30px",
+    borderRadius: "5px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

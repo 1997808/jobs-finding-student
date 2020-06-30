@@ -1,15 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import myImage from "../../assets/images/715272_l.jpg"
 import JobInfo from "../../components/jobInfo"
-import Title from "../../components/title"
+// import Title from "../../components/title"
 import DetailJob from "./user/content/DetailJob"
 import DetailCompany from "./user/content/DetailCompany"
 import DetailComment from "./user/content/DetailComment"
+import Snackbar from '../../components/snackbar'
+import { Link } from 'react-router-dom'
 
 const avatar = ["Google.png", "nikon.png", "PizzaPlanet.png", "pringle.png", "ShareX_Logo.png", "Valorant_icon.png"]
 let avatarRandom = avatar[Math.floor(Math.random() * avatar.length)]
 
 export default function JobDetail() {
+  const snackbarRef = useRef();
+
+  const HandleSnackbar = (e) => {
+    e.preventDefault();
+    snackbarRef.current.openSnackBar('Nộp đơn thành công');
+  }
+
   const [content, setContent] = useState("detail")
   const handleContent = (page) => {
     setContent(page)
@@ -40,8 +49,12 @@ export default function JobDetail() {
       </div>
 
       <div style={styles.btnContainer}>
-        <button style={styles.submitBtn}>Nộp đơn ứng tuyển</button>
+        {content === "comment"
+          ? <Link to={"/addcomment"}><button style={styles.submitBtn}>Viết đánh giá</button></Link>
+          : <button style={styles.submitBtn} onClick={(e) => HandleSnackbar(e)}>Nộp đơn ứng tuyển</button>}
       </div>
+
+      <Snackbar message={"Something went wrong..."} ref={snackbarRef} />
     </React.Fragment>
   )
 }
