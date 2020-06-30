@@ -5,35 +5,42 @@ import {
 } from "react-router-dom";
 
 export default function Sort() {
-  const [textFind, setTextFind] = useState("")
+  const [sort, setSort] = useState("default")
 
-  // const handleChange = (event) => {
-  //   setTextFind(event.target.value);
-  // }
+  const handleSort = (e) => {
+    setSort(e.target.value)
+  }
+
+  const handleResetSort = () => {
+    setSort("default")
+  }
 
   const handleSubmit = (event) => {
-    alert('An essay was submitted: ' + textFind);
+    alert('An essay was submitted: ');
     event.preventDefault();
   }
 
   return (
-    <form onSubmit={handleSubmit} style={styles.form}>
+    <form style={styles.form}> {/* onSubmit={handleSubmit} */}
       {/* <input style={styles.input} type="radio" onChange={handleChange} /> */}
 
       <Title title="Sắp xếp theo" />
-      <select style={styles.input}>
-        <option selected value="grapefruit">Mặc định</option>
-        <option value="lime">Ngày đăng (cũ nhất)</option>
-        <option value="coconut">Lương (cao - thấp)</option>
-        <option value="coconut">Lương (thấp - cao)</option>
-        <option value="coconut">Đánh giá (cao - thấp)</option>
-        <option value="coconut">Đánh giá (thấp - cao)</option>
+      <select style={styles.input} value={sort} onChange={(e) => handleSort(e)}>
+        <option value="default">Mặc định</option>
+        <option value="dateOld">Ngày đăng (cũ nhất)</option>
+        <option value="salaryHigh">Lương (cao - thấp)</option>
+        <option value="salaryLow">Lương (thấp - cao)</option>
+        <option value="ratingHigh">Đánh giá (cao - thấp)</option>
+        <option value="ratingLow">Đánh giá (thấp - cao)</option>
       </select>
       <div style={styles.btnContainer}>
         <Link to={"/findjob"} style={styles.container}>
           <button style={styles.submitBtn} type="submit" >Áp dụng</button>
         </Link>
-        <button style={styles.btn} type="submit" >Làm lại</button>
+        <button
+          style={styles.btn}
+          onClick={() => handleResetSort()}
+        >Làm lại</button>
       </div>
     </form>
   )

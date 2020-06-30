@@ -6,51 +6,74 @@ import {
 
 
 export default function Filter() {
-  const [textFind, setTextFind] = useState("")
+  const [place, setPlace] = useState("default")
+  const [time, setTime] = useState("default")
+  const [salary, setSalary] = useState("default")
+  const [star, setStar] = useState("default")
 
-  // const handleChange = (event) => {
-  //   setTextFind(event.target.value);
-  // }
+  const handlePlace = (e) => {
+    setPlace(e.target.value)
+  }
+
+  const handleTime = (e) => {
+    setTime(e.target.value)
+  }
+
+  const handleSalary = (e) => {
+    setSalary(e.target.value)
+  }
+
+  const handleStar = (e) => {
+    setStar(e.target.value)
+  }
+
+  const handleResetFilter = () => {
+    setPlace("default")
+    setTime("default")
+    setSalary("default")
+    setStar("default")
+  }
 
   const handleSubmit = (event) => {
-    alert('An essay was submitted: ' + textFind);
+    alert('An essay was submitted: ');
     event.preventDefault();
   }
 
   return (
-    <form onSubmit={handleSubmit} style={styles.form}>
+    <form style={styles.form}> {/* onSubmit={handleSubmit} */}
       {/* <input style={styles.input} type="radio" onChange={handleChange} /> */}
 
       <Title title="Địa điểm" />
-      <select style={styles.input}>
-        <option selected value="grapefruit">Hà Nội</option>
-        <option value="lime">Đà Nẵng</option>
-        <option value="coconut">Hồ Chí Minh</option>
+      <select style={styles.input} value={place} onChange={(e) => handlePlace(e)}>
+        <option value="HN">Hà Nội</option>
+        <option value="DN">Đà Nẵng</option>
+        <option value="HCM">Hồ Chí Minh</option>
         <option value="default">Mặc Định</option>
       </select>
 
       <Title title="Thời gian làm" />
-      <select style={styles.input}>
-        <option value="grapefruit">Parttime</option>
-        <option value="lime">Fulltime</option>
-        <option selected value="coconut">Tự do</option>
+      <select style={styles.input} value={time} onChange={(e) => handleTime(e)}>
+        <option value="part">Parttime</option>
+        <option value="full">Fulltime</option>
+        <option value="free">Tự do</option>
         <option value="default">Mặc Định</option>
       </select>
 
       <Title title="Lương" />
-      <select style={styles.input}>
-        <option value="grapefruit">Dưới 2 triệu</option>
-        <option value="lime">2 triệu - 4 triệu</option>
-        <option selected value="coconut">4 triệu - 6 triệu</option>
-        <option value="default">Trên 6 triệu</option>
+      <select style={styles.input} value={salary} onChange={(e) => handleSalary(e)}>
+        <option value="less 2">Dưới 2 triệu</option>
+        <option value="2 to 4">2 triệu - 4 triệu</option>
+        <option value="4 to 6">4 triệu - 6 triệu</option>
+        <option value="more 6">Trên 6 triệu</option>
+        <option value="default">Mặc Định</option>
       </select>
 
       <Title title="Mức đánh giá" />
-      <select style={styles.input}>
-        <option value="grapefruit">Trên 1 sao</option>
-        <option value="lime">Trên 2 sao</option>
-        <option selected value="coconut">Trên 3 sao</option>
-        <option value="mango">Trên 4 sao</option>
+      <select style={styles.input} value={star} onChange={(e) => handleStar(e)}>
+        <option value="1">Trên 1 sao</option>
+        <option value="2">Trên 2 sao</option>
+        <option value="3">Trên 3 sao</option>
+        <option value="4">Trên 4 sao</option>
         <option value="default">Mặc Định</option>
       </select>
 
@@ -61,7 +84,10 @@ export default function Filter() {
           // type="submit"
           >Áp dụng</button>
         </Link>
-        <button style={styles.btn} type="submit" >Làm lại</button>
+        <button
+          style={styles.btn}
+          onClick={() => handleResetFilter()}
+        >Làm lại</button>
       </div>
     </form>
   )

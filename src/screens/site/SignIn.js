@@ -136,6 +136,7 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: "60px"
+    marginTop: "45px",
+    marginBottom: "30px"
   },
 }

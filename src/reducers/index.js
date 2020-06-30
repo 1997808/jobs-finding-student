@@ -1,12 +1,12 @@
 // reducers/index.js
 
 import { combineReducers } from 'redux'
-import todos from './todos'
 import drawerReducer from './layout'
+import sortReducer from './sort'
 
 export default combineReducers({
-  todos,
   drawer: drawerReducer,
+  sort: sortReducer
 })
 
 // export default rootReducer

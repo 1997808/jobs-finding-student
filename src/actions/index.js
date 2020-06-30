@@ -2,6 +2,14 @@ export const toggleDrawer = () => ({
   type: 'TOGGLE_DRAWER',
 })
 
+export const resetSort = () => ({
+  type: 'RESET_SORT',
+})
+
+export const changeSort = (value) => ({
+  type: 'CHANGE_SORT',
+  value,
+})
 
 // let nextTodoId = 0
 // export const addTodo = text => ({

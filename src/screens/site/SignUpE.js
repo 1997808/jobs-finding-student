@@ -132,6 +132,7 @@ const styles = {
     display: "flex",
     justifyContent: "flex-end",
     alignItems: "center",
-    padding: "0 15px"
+    padding: "0 15px",
+    marginBottom: "30px"
   },
 }
