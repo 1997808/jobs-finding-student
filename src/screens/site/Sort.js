@@ -3,16 +3,23 @@ import Title from '../../components/title'
 import {
   Link
 } from "react-router-dom";
+import { useSelector, useDispatch } from 'react-redux'
+import { resetSort, changeSort } from '../../actions/index'
 
 export default function Sort() {
-  const [sort, setSort] = useState("default")
+  const sortValue = useSelector(state => state.sort)
+  const dispatch = useDispatch()
+
+  // const [sort, setSort] = useState("default")
 
   const handleSort = (e) => {
-    setSort(e.target.value)
+    dispatch(changeSort(e.target.value))
+    // setSort(e.target.value)
   }
 
   const handleResetSort = () => {
-    setSort("default")
+    dispatch(resetSort())
+    // setSort("default")
   }
 
   // const handleSubmit = (event) => {
@@ -25,7 +32,8 @@ export default function Sort() {
       {/* <input style={styles.input} type="radio" onChange={handleChange} /> */}
 
       <Title title="Sắp xếp theo" />
-      <select style={styles.input} value={sort} onChange={(e) => handleSort(e)}>
+      <select style={styles.input} value={sortValue} onChange={(e) => handleSort(e)}>
+        {/* <select style={styles.input} value={sort} onChange={(e) => handleSort(e)}> */}
         <option value="default">Mặc định</option>
         <option value="dateOld">Ngày đăng (cũ nhất)</option>
         <option value="salaryHigh">Lương (cao - thấp)</option>
@@ -40,6 +48,7 @@ export default function Sort() {
         <button
           style={styles.btn}
           onClick={() => handleResetSort()}
+        // onClick={() => handleResetSort()}
         >Làm lại</button>
       </div>
     </form>
