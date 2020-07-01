@@ -1,7 +1,5 @@
 import React, { useState, useRef } from 'react'
-import myImage from "../../assets/images/715272_l.jpg"
 import JobInfo from "../../components/jobInfo"
-// import Title from "../../components/title"
 import DetailJob from "./user/content/DetailJob"
 import DetailCompany from "./user/content/DetailCompany"
 import DetailComment from "./user/content/DetailComment"
@@ -12,6 +10,9 @@ const avatar = ["Google.png", "nikon.png", "PizzaPlanet.png", "pringle.png", "Sh
 let avatarRandom = avatar[Math.floor(Math.random() * avatar.length)]
 
 export default function JobDetail() {
+  const banner = ["715272_l.jpg", "banner1.png", "banner2.jpg", "banner3.jpg", "banner4.png"]
+  const [image, setImage] = useState(banner[Math.floor(Math.random() * banner.length)])
+
   const snackbarRef = useRef();
 
   const HandleSnackbar = (e) => {
@@ -24,10 +25,17 @@ export default function JobDetail() {
     setContent(page)
   }
 
+  const handleBanner = () => {
+    setImage(banner[Math.floor(Math.random() * banner.length)])
+  }
+
   return (
     <React.Fragment>
       <div className="row" style={styles.container}>
-        <img src={myImage} style={styles.banner} alt="ava"></img>
+        <img src={require("../../assets/images/" + image)}
+          onClick={() => handleBanner()}
+          style={styles.banner}
+          alt="ava"></img>
         <div style={styles.jobNormal}>
           <JobInfo avatarRandom={avatarRandom} />
         </div>
@@ -54,7 +62,7 @@ export default function JobDetail() {
           : <button style={styles.submitBtn} onClick={(e) => HandleSnackbar(e)}>Nộp đơn ứng tuyển</button>}
       </div>
 
-      <Snackbar message={"Something went wrong..."} ref={snackbarRef} />
+      <Snackbar message={'Nộp đơn thành công'} ref={snackbarRef} />
     </React.Fragment>
   )
 }

@@ -2,7 +2,7 @@
   visibility: hidden;
   min-width: 250px;
   margin-left: -125px;
-  background: #4CAF50;
+  background: #444;
   color: #fff;
   text-align: center;
   border-radius: 2px;
@@ -19,8 +19,8 @@
   visibility: visible; /* Show the snackbar */
   /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
  However, delay the fade out process for 2.5 seconds */
- -webkit-animation: fadein 0.5s, fadeout 0.5s 2s;
- animation: fadein 0.5s, fadeout 0.5s 2s;
+ -webkit-animation: fadein 0.3s, fadeout 0.3s 0.7s;
+ animation: fadein 0.3s, fadeout 0.3s 0.7s;
 }
 
 /* Animations to fade the snackbar in and out */

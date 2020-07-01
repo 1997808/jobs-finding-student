@@ -1,9 +1,11 @@
 import React from 'react'
 import FeaturedJob from '../../components/featuredJob'
 import JobItem from '../../components/jobItem'
+import LazyLoad from 'react-lazyload';
 import {
   Link
 } from "react-router-dom";
+
 
 function Item(props) {
   const { iconName, text, url } = props
@@ -18,6 +20,7 @@ function Item(props) {
 }
 
 export default function findJob() {
+  const data = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6]
   return (
     <div style={styles.container}>
       <div className="row" style={styles.funcBarContainer}>
@@ -27,12 +30,19 @@ export default function findJob() {
         </div>
       </div>
       <div style={styles.jobList}>
-        <FeaturedJob />
-        <JobItem />
-        <JobItem />
-        <JobItem />
-        <JobItem />
-        <JobItem />
+        {data.map(() => {
+          return (
+            <LazyLoad
+              height={100}
+              placeholder={<p>Loading...</p>}
+            >
+              <FeaturedJob />
+              <JobItem />
+              <JobItem />
+              <JobItem />
+            </LazyLoad>
+          )
+        })}
       </div>
     </div>
   )

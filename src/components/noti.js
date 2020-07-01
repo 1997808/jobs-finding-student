@@ -34,17 +34,18 @@ const styles = {
   },
 
   colorBar: {
-    width: "30px",
-    height: "30px",
-    backgroundImage: "linear-gradient(to top left, #444, #bbb)",
-    borderRadius: "5px",
+    width: "24px",
+    height: "24px",
+    backgroundImage: "linear-gradient(to top left, #FF6B6B , #FFD538)",
+    // backgroundImage: "linear-gradient(to top left, #444, #bbb)",
+    borderRadius: "2px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
   },
 
   textContainer: {
-    width: "calc(100% - 45px)"
+    width: "calc(100% - 39px)"
   },
 
   notiDetail: {

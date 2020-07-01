@@ -33,7 +33,7 @@ export default class Snackbar extends PureComponent {
     this.setState({ isActive: true }, () => {
       setTimeout(() => {
         this.setState({ isActive: false });
-      }, 2500);
+      }, 950);
     });
   }
 

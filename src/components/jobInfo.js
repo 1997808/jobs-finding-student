@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import Snackbar from './snackbar'
 // import myAvatar from "../assets/images/Valorant_icon.png"
 // import Alert from "./alert"
 
@@ -6,13 +7,12 @@ export default function JobInfo(props) {
   const { avatarRandom } = props
   const [bookmark, setBookmark] = useState(false)
 
-  // const handleAlert = () => {
-  //   if (bookmark) {
-  //     return (
-  //       <Alert />
-  //     )
-  //   }
-  // }
+  const snackbarRef = useRef();
+
+  const HandleSnackbar = (e) => {
+    e.preventDefault();
+    snackbarRef.current.openSnackBar(bookmark ? 'Bỏ quan tâm' : 'Thêm quan tâm');
+  }
 
   return (
     <React.Fragment>
@@ -24,13 +24,14 @@ export default function JobInfo(props) {
         <h6 style={styles.text2}>Bạn còn 9 ngày để ứng tuyển</h6>
       </div>
       <i
-        onClick={() => {
+        onClick={(e) => {
           setBookmark(!bookmark)
-          // handleAlert()
+          HandleSnackbar(e)
         }}
         style={bookmark ? styles.bookmarkActive : styles.bookmark}
         className={"fas fa-bookmark"}
       ></i>
+      <Snackbar ref={snackbarRef} />
     </React.Fragment >
   )
 }
